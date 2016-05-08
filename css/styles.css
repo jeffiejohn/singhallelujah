@@ -1,0 +1,68 @@
+/* styles.css */
+
+html, body {
+	height: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+#carousel {
+	height: cover;
+}
+
+#cover {
+	background: #222 url('../img/guitar.jpg') center center no-repeat;
+	background-size: cover;
+	color: white;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+#cover-caption {
+	width: 100%;
+}
+
+.cover-banner {
+	background: rgba(32,32,32,0.5);	
+	padding: 3rem;
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius: 10px;
+}
+
+.section-content {	padding: 5rem 0;
+}
+
+#about {
+	background: url('../img/banjo.jpg') center center no-repeat; 
+	background-size: cover;
+}
+
+#songPage {
+	background: url('../img/mic.jpg') center center no-repeat; 
+	background-size: cover;
+}
+
+.about-text {
+	background: rgba(0,0,0,0.8);
+	padding: 2rem;
+	color: #eee;
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius: 10px;
+	height: 100%;
+}
+
+#footer-main {
+	background: #333;
+	color: #fff;
+	padding: 1rem 0;
+}
+
+.card{
+	margin: 0 10px 10px 0;
+}
