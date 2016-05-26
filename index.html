@@ -13,24 +13,21 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/typeahead.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script> 
+		$(function(){
+			$("#headerContent").load("header.html"); 
+			$("#footerContent").load("footer.html"); 
+		});
+    </script> 
   </head>
   <body>
-    
-	<nav class="navbar navbar-dark bg-inverse navbar-full navbar-fixed-top" id="nav-main">
-	  <a class="navbar-brand" href="#">Rz</a>
-	  <ul class="nav navbar-nav navbar-right">
-		<li class="nav-item">
-		  <a class="nav-link" href="index.html">Home</a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="index.html#about">About</a>
-		</li>
-	  </ul>
-	</nav>					
+	
+	<div id="headerContent"></div>
 	
 	<section id="cover">
 		<div id="cover-caption">
-			<div class="container">
+			<div class="container">				
 				<div class="col-sm-10 col-sm-offset-1">
 					<div class="cover-banner">
 						<h1 class="display-4">Sing Hallelujah</h1>
@@ -53,40 +50,9 @@
 		</div>
 	</section>	
 	
-	<section id="about">
-		<div class="section-content">
-			<div class="container">
-				<div class="col-md-offset-6 col-md-6">
-					<div class="about-text">
-						<h3>About us</h3>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, tempore, distinctio, quae magni quis eveniet at mollitia quaerat ipsa numquam repudiandae ut modi cupiditate quo error optio sit dignissimos ullam!</p>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, maxime, dicta deleniti temporibus repellendus iusto cumque nostrum eos maiores placeat perferendis illum at voluptatum recusandae fugit voluptas dolorum expedita repellat.</p>
-						
-						<h5>Follow online</h5>
-						<a href="#" class="btn btn-sm btn-secondary-outline">twitter</a>
-						<a href="#" class="btn btn-sm btn-secondary-outline">facebook</a>
-						<a href="#" class="btn btn-sm btn-secondary-outline">youtube</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<footer id="footer-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, consequuntur, tenetur voluptate fugit alias beatae natus. Quidem, voluptatem, voluptas, corrupti quo quibusdam expedita molestiae optio eum porro iste ipsa doloremque.</p>
-				</div>
-				<div class="col-sm-8">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, sequi natus magnam ipsa reprehenderit vero ducimus cupiditate quas? Molestiae, consequatur impedit quisquam eos delectus! Reiciendis provident similique ipsa ad.</p>						
-				</div>
-			</div>
-		</div>
-	</footer>
+	<div id="footerContent"></div>
 	
 	<!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap3-typeahead.js"></script>	
 	<script src="js/dropdown.js"></script>	

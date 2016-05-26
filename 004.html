@@ -13,21 +13,19 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/typeahead.css">	
-  </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script> 
+		$(function(){
+			$("#headerContent").load("header.html"); 
+			$("#footerContent").load("footer.html"); 
+		});
+    </script> 
+
+	</head>
   <body>
-    
-	<nav class="navbar navbar-dark bg-inverse navbar-full navbar-fixed-top" id="nav-main">
-	  <a class="navbar-brand" href="#">Rz</a>
-	  <ul class="nav navbar-nav">
-		<li class="nav-item">
-		  <a class="nav-link" href="index.html">Home</a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="index.html#about">About</a>
-		</li>
-	  </ul>
-	</nav>					
 	
+	<div id="headerContent"></div>	
+
 	<section id="songPage">
 		<div class="section-content">
 			<div class="container">
@@ -65,28 +63,15 @@
 							In You it's in You<br>
 							In You it's in You<br>
 							It's in You
-						</p>	
-											
+						</p>					
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	<footer id="footer-main">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, consequuntur, tenetur voluptate fugit alias beatae natus. Quidem, voluptatem, voluptas, corrupti quo quibusdam expedita molestiae optio eum porro iste ipsa doloremque.</p>
-				</div>
-				<div class="col-sm-8">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, sequi natus magnam ipsa reprehenderit vero ducimus cupiditate quas? Molestiae, consequatur impedit quisquam eos delectus! Reiciendis provident similique ipsa ad.</p>	
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, laudantium, rerum distinctio accusamus consequuntur pariatur iusto neque mollitia tempore? Illo, quaerat tenetur vel aut eius ratione veniam reprehenderit vitae. Accusamus.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	
+
+	<div id="footerContent"></div>
+
 	<!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
